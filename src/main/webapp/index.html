@@ -5,6 +5,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>Hello TOmact</h1>
+        <h1>Date Time </h1>
+	<script>
+		    function updateDateTime() {
+			            // Create a new Date object
+			            var now = new Date();
+
+			            // Format the date and time
+			            var datetime = now.toLocaleString();
+
+			            // Get the h1 element by its ID
+			            var datetimeElement = document.getElementById("datetime");
+
+			            // Update the element's content
+			            datetimeElement.textContent = datetime;
+			        }
+
+    // Call the function to update the date and time
+    updateDateTime();
+
+    // Optionally, you can update the date and time every second with setInterval
+    setInterval(updateDateTime, 1000);
+	</script>
     </body>
 </html>
